@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.hide{
+    display: none;
+}
+
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-flow: row wrap;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 100em;
+    min-width: 15em;
+    height: 50em;
+}
+
+.header{
+    background-color: #ffbb59;
+    height: 5em;
+    margin-inline: auto;
+}
+
+.header__title{
+    font-family: 'Montserrat', sans-serif;
+    color: #0063de;
+}
+
+ .modal{
+   
+    width: 100vw;
+    height: 100vh;
+    gap: 2em;
+    background-color: #070707a6;
+    position: absolute;
+   
+}
+
+
+.wrong{
+    display: none;
+}
+
+.winner{
+    display: none;
+}
+
+
+
+.modal-text{
+    width: 80%;
+    min-width: 10em;
+    height: 3em;
+    text-align: center;
+    background-color: #0063de;
+    color: #ffffff;
+    font-size: 1em;
+   
+}
+
+.winner .modal-text{
+    background-color: #4fac6e;
+}
+
+main{
+
+height: 100vh;
+background-color:#ffd661 ;
+margin-inline: auto;
+
+
+
+}
+
+.game{
+    
+  width: 100%;
+    max-width: 40em;
+    min-width: 10em;
+    background-color: #ffffff;
+    border-radius: 30px;
+    gap: 1em;
+}
+
+
+.game__header{
+    margin: 1em 0 0 0;
+    background-color: #ffd661;
+    text-align: center;
+    width: 100%;
+    min-width: 10em;
+    max-width: 30em;
+    
+    border-radius: 1em;
+    
+    
+}
+
+.game__lives{
+    color: #0063de;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.circle__lives{
+
+    color: #0063de;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 700;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+
+    border: #ffbb59 2px solid;
+    border-radius:50% ;
+
+
+}
+
+.entry__label, .word__label, .hints {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0063de;
+    font-size: 1.3em;
+}
+
+.entry__input, .word__label{
+    margin: 1em 0;
+}
+
+.letter{
+    margin: 0 .2em;
+}
+.hint{
+    
+    color: #ffbb59;
+}
+
+.mistakes{
+    margin: 1em 0;
+}
+
+#wrong{
+    font-size: 1.5em;
+    color: #0063de;
+}
+
+input{
+    width: 2em;
+    height: 2.2em;
+    border-color: #0063de;
+    text-align: center;
+    color: #0063de;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+input:focus{
+
+  color: #0063de;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  outline-color:#ffbb59  ;
+}
+
+.word__inputs{
+    margin-bottom: 1em;
+}
+
+.btns{
+    width: 100%;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.btn{
+    width: 10em;
+    height: 2em;
+    background-color: #ffbb59;
+    border-radius: 30px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0063de;
+    cursor: pointer;
+}

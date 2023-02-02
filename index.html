@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the word</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header container flex-center" >
+    <h1 class="header__title">GUESS THE WORD</h1>
+    </header>
+
+    
+
+    <main class="container flex-center ">
+
+        <div class="wrong modal flex-column flex-center " id="gmOver">
+            <p class="modal-text flex-center ">GAME OVER </p>
+            <button class="btn btn_modal flex-center" id="restart">RESTART</button>
+        </div>
+
+        <div class="modal winner flex-column flex-center " id="gmWon">
+            <p class="modal-text flex-center ">YOU ARE THE WINNER</p>
+            <button class="btn btn_modal flex-center" id="restart2">Play again</button>
+        </div>
+
+        <div class="game flex-center flex-column">
+            <div class="game__header flex-center flex-column">
+                <h2 class="game__lives">LIVES </h2>
+                <div class="circle__lives flex-center">
+                <p class="lives" id="lives">10</p>
+                </div>
+        </div>
+
+            <div class="flex-row flex-center btns">
+                <div class="btn flex-center " id="btn-start"> Start Game</div>
+                <div class="btn flex-center " id="btn-reset"> reset </div>
+            </div>
+
+            <form class="userEntry flex-center flex-column" id="userOption">
+                <label for="entry" class="entry__label">Choose a   letter</label>
+                <input type="text" id="entry" name="entry" class="entry__input" maxlength="1">
+            </form>
+
+            <div class="wordToGuess flex-center flex-column">
+                <label for="word" class="word__label">  word to guess</label>
+                <div class="word__inputs flex-center flex-row"  id="inputs" >
+            </div>
+
+            
+
+         
+
+            <div class="hints"> 
+                <p  class="hints">Hint:</p>
+                <span class="hint" id="hint"></span>
+            </div>
+            
+            
+            <div class="mistakes"> 
+                <p  class="hints">Wrong letters</p>
+                <span class="hint" id="wrong"></span>
+            </div>
+
+            
+                
+                <div class="flex-row flex-center btns">
+                    <div class="btn flex-center" id="Check"> Check </div>
+                    
+                </div>
+            </div>
+            
+            
+
+          
+            
+        </div>
+        
+    </main>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+    
+   
+
+</body>
+</html>
